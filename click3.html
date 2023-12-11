@@ -1,0 +1,202 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stylish and Responsive Yoga Website</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f3f3f3;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .header img {
+            border-radius: 50%;
+            max-width: 100px;
+            height: auto;
+        }
+
+        .intro {
+            text-align: justify;
+            margin-bottom: 20px;
+        }
+
+        .video-container {
+            position: relative;
+            padding-bottom: 56.25%;
+            padding-top: 30px;
+            height: 0;
+            overflow: hidden;
+        }
+
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+
+        .cards {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+        .card {
+            flex: 0 0 calc(25% - 20px);
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+            border-radius: 5px;
+            margin: 10px;
+            overflow: hidden;
+            transition: box-shadow 0.3s ease;
+        }
+
+        .card:hover {
+            box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.4);
+        }
+
+        .card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 5px 5px 0 0;
+        }
+
+        .card .container {
+            padding: 10px;
+        }
+
+        .card h4 {
+            margin: 0;
+        }
+
+        #logout{
+            border: 2px solid black;
+            border-radius: 10px;
+            display: inline-block;
+            color: black;
+            padding: 15px;
+            margin-left: 850px;
+            cursor: pointer;
+        }
+
+        #logout:hover{
+            background-color: rgb(154, 168, 168);
+            font-size: larger;
+        }
+
+        /* Responsive layout for smaller screens */
+        @media only screen and (max-width: 800px) {
+            .header h1 {
+                font-size: 24px;
+            }
+
+            .intro p {
+                font-size: 14px;
+            }
+
+            .card {
+                flex: 0 0 calc(33.33% - 20px);
+            }
+        }
+
+        /* Responsive layout for even smaller screens */
+        @media only screen and (max-width: 600px) {
+            .card {
+                flex: 0 0 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <!-- <img src="https://media.istockphoto.com/id/1355037936/photo/shot-of-a-young-businessman-looking-stressed-while-working-in-a-modern-office.jpg?s=1024x1024&w=is&k=20&c=keYWImA78TOzpWKgsjdtrqe5Y-XndPPrZAPjMuWbuj8=" alt="alternatetext"> -->
+            <a href="index.html" ><span id="logout">logout</span></a>
+            <h1>ADVANCED WORKOUT</h1>
+            
+        </div>
+        
+        <div class="cards">
+            <div class="card">
+                <img src="images/ad 1.png" alt="Pose 1">
+                <div class="container">
+                    <h4><b>Sprinting</b></h4>
+                    <p>10 Minutes</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="images/ad 2.jpg" alt="Pose 1">
+                <div class="container">
+                    <h4><b>Deadlifts</b></h4>
+                    <p>10x3 reps</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="images/ad 3.png" alt="Pose 1">
+                <div class="container">
+                    <h4><b>Benchpress</b></h4>
+                    <p>15x3 reps</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="images/ad 4.jpg" alt="Pose 1">
+                <div class="container">
+                    <h4><b>PowerLifting</b></h4>
+                    <p>20x3 reps</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="images/ad 5.jpg" alt="Pose 1">
+                <div class="container">
+                    <h4><b>SidePlank</b></h4>
+                    <p>3 Minutes x 3 times </p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="images/ad 6.jpg" alt="Pose 1">
+                <div class="container">
+                    <h4><b>Rope</b></h4>
+                    <p>25x4 reps</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="images/ad 7.jpg" alt="Pose 1">
+                <div class="container">
+                    <h4><b>Calisthenics</b></h4>
+                    <p>30 minutes</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="images/ad 8.jpg" alt="Pose 1">
+                <div class="container">
+                    <h4><b>Core Cardio</b></h4>
+                    <p>25-30 Minutes</p>
+                </div>
+            </div>
+            <!-- Add more cards for other yoga poses here -->
+        </div>
+        
+    </div>
+</body>
+
+</html>
